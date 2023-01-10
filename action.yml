@@ -26,6 +26,7 @@ runs:
         profile: minimal
         toolchain: stable
         override: true
+    - uses: Swatinem/rust-cache@v2
     - name: Bump Cargo.toml version
       shell: bash
       if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
