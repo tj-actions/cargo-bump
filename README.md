@@ -18,9 +18,9 @@ Bump the current version in your `Cargo.toml`.
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-| INPUT |  TYPE  | REQUIRED |         DEFAULT         |            DESCRIPTION            |
-|-------|--------|----------|-------------------------|-----------------------------------|
-| token | string |   true   | `"${{ github.token }}"` | GITHUB\_TOKEN or a Repo scoped PAT |
+|  INPUT  |  TYPE  | REQUIRED | DEFAULT |                                         DESCRIPTION                                         |
+|---------|--------|----------|---------|---------------------------------------------------------------------------------------------|
+| version | string |   true   |         | Version to bump to. (Default: the<br> diff between the current tag and<br>the previous tag) |
 
 <!-- AUTO-DOC-INPUT:END -->
 
