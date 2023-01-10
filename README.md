@@ -29,7 +29,7 @@ jobs:
 
 |       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                                   DESCRIPTION                                                   |
 |-------------------|--------|----------|---------|-----------------------------------------------------------------------------------------------------------------|
-|      version      | string |  false   |         | The release type (major, minor, patch).<br> (Default: the diff between the current<br>tag and the previous tag) |
+|   release\_type    | string |  false   |         | The release type (major, minor, patch).<br> (Default: the diff between the current<br>tag and the previous tag) |
 | working-directory | string |  false   |  `"."`  |                                                Working directory                                                |
 
 <!-- AUTO-DOC-INPUT:END -->
