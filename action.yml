@@ -49,6 +49,7 @@ runs:
         else
           cargo bump ${{ inputs.version }}
         fi
+        cargo update --workspace
 branding:
   icon: check-square
   color: white
