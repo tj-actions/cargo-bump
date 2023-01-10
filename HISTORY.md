@@ -1,5 +1,20 @@
 # Changelog
 
+## [v2.0.0](https://github.com/tj-actions/cargo-bump/tree/v2.0.0) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2...v2.0.0)
+
+## [v2](https://github.com/tj-actions/cargo-bump/tree/v2) (2023-01-10)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v1...v2)
+
+**Merged pull requests:**
+
+- Updated README.md [\#18](https://github.com/tj-actions/cargo-bump/pull/18) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#17](https://github.com/tj-actions/cargo-bump/pull/17) ([jackton1](https://github.com/jackton1))
+- chore: upgraded test-package [\#16](https://github.com/tj-actions/cargo-bump/pull/16) ([jackton1](https://github.com/jackton1))
+- Upgraded to v1.1.0 [\#15](https://github.com/tj-actions/cargo-bump/pull/15) ([jackton1](https://github.com/jackton1))
+
 ## [v1](https://github.com/tj-actions/cargo-bump/tree/v1) (2023-01-10)
 
 [Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v1.1.0...v1)
