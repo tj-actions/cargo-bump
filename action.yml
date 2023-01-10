@@ -4,8 +4,12 @@ author: tj-actions
 inputs:
   version:
     description: 'Version to bump to. (Default: the diff between the current tag and the previous tag)'
-    required: true
+    required: false
     default: ''
+  working-directory:
+    description: 'Working directory'
+    required: false
+    default: '.'
 
 runs:
   using: 'composite'
@@ -26,6 +30,7 @@ runs:
     - name: Bump Cargo.toml version
       shell: bash
       if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
+      working-directory: ${{ inputs.working-directory }}
       run: |
         if [[ -z "${{ inputs.version }}" ]]; then
           cargo bump ${{ steps.semver-diff.outputs.release_type }}
