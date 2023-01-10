@@ -27,10 +27,10 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                            DESCRIPTION                                             |
-|-------------------|--------|----------|---------|----------------------------------------------------------------------------------------------------|
-|      version      | string |  false   |         | Semver Version to bump to. (Default:<br> the diff between the current tag<br>and the previous tag) |
-| working-directory | string |  false   |  `"."`  |                                         Working directory                                          |
+|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                                   DESCRIPTION                                                   |
+|-------------------|--------|----------|---------|-----------------------------------------------------------------------------------------------------------------|
+|      version      | string |  false   |         | The release type (major, minor, patch).<br> (Default: the diff between the current<br>tag and the previous tag) |
+| working-directory | string |  false   |  `"."`  |                                                Working directory                                                |
 
 <!-- AUTO-DOC-INPUT:END -->
 
