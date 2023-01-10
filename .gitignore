@@ -1,2 +1,7 @@
 .idea/
 .envrc
+
+
+# Added by cargo
+
+/test-package/target
