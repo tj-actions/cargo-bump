@@ -4,7 +4,7 @@
 
 ## cargo-bump
 
-Bump the current version in your `Cargo.toml`.
+Github action that bumps the current version in your `Cargo.toml`.
 
 ```yaml
 on:
