@@ -11,6 +11,17 @@ inputs:
     required: false
     default: '.'
 
+outputs:
+  release_type:
+    description: 'The difference between two versions by the release type (major, minor, patch, prerelease, build)'
+    value: ${{ steps.semver-diff.outputs.release_type }}
+  new_version:
+    description: 'The current project version'
+    value: ${{ steps.semver-diff.outputs.new_version }}
+  old_version:
+    description: 'The previous project version'
+    value: ${{ steps.semver-diff.outputs.old_version }}
+
 runs:
   using: 'composite'
   steps:
