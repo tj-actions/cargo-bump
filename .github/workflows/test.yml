@@ -24,3 +24,5 @@ jobs:
         uses: reviewdog/action-shellcheck@v1
       - name: Run cargo-bump
         uses: ./
+        with:
+          working-directory: test-package
