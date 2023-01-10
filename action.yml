@@ -3,7 +3,7 @@ description: Bump Cargo.toml version
 author: tj-actions
 inputs:
   version:
-    description: 'Semver Version to bump to. (Default: the diff between the current tag and the previous tag)'
+    description: 'The release type (major, minor, patch). (Default: the diff between the current tag and the previous tag)'
     required: false
     default: ''
   working-directory:
