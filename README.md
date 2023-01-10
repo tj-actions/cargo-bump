@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bump version
-        uses: tj-actions/cargo-bump@v1
+        uses: tj-actions/cargo-bump@v2
       # Commit and Push changes to the Cargo.toml
 ```
 
