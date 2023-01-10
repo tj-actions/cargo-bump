@@ -1,17 +1,37 @@
-name: Docker Action
-description:  Template Docker action
+name: Cargo Bump
+description: Bump Cargo.toml version
 author: tj-actions
 inputs:
-  token:
-    description: 'GITHUB_TOKEN or a Repo scoped PAT'
+  version:
+    description: 'Version to bump to. (Default: the diff between the current tag and the previous tag)'
     required: true
-    default: ${{ github.token }}
+    default: ''
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.token }}
+  using: 'composite'
+  steps:
+    - name: Run semver-diff
+      id: semver-diff
+      uses: tj-actions/semver-diff@v2
+      with:
+        initial_release_type: ${{ inputs.version }}
+    - name: Install stable toolchain
+      if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
+      uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+        toolchain: stable
+        override: true
+        components: cargo-bump
+    - name: Bump Cargo.toml version
+      shell: bash
+      if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
+      run: |
+        if [[ -z "${{ inputs.version }}" ]]; then
+          cargo bump ${{ steps.semver-diff.outputs.release_type }}
+        else
+          cargo bump ${{ inputs.version }}
+        fi
 branding:
   icon: check-square
   color: white

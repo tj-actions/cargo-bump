@@ -1,7 +1,12 @@
 name: CI
 
 on:
+  release:
+    types:
+      - created
   push:
+    tags:
+      - v*
     branches:
       - main
   pull_request:
@@ -11,11 +16,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Test docker-action
+    name: Test cargo-bump
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1
-      - name: Run docker-action
+      - name: Run cargo-bump
         uses: ./
