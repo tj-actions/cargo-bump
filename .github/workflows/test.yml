@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  release:
-    types:
-      - created
   push:
     tags:
       - v*
@@ -20,9 +17,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1
       - name: Run cargo-bump
+        id: cargo-bump
         uses: ./
         with:
           working-directory: test-package
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4.2.3
+        with:
+          base: "main"
+          labels: "merge when passing"
+          title: "chore: upgraded test-package"
+          branch: "chore/upgraded-to-${{ steps.cargo-bump.outputs.new_version }}"
+          body: "View [CHANGES](https://github.com/${{ github.repository }}/compare/${{ steps.cargo-bump.outputs.old_version }}...${{ steps.cargo-bump.outputs.new_version }})"
+          token: ${{ secrets.PAT_TOKEN }}
