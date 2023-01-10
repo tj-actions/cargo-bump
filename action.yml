@@ -2,7 +2,7 @@ name: Cargo Bump
 description: Bump Cargo.toml version
 author: tj-actions
 inputs:
-  version:
+  release_type:
     description: 'The release type (major, minor, patch). (Default: the diff between the current tag and the previous tag)'
     required: false
     default: ''
@@ -29,9 +29,9 @@ runs:
       id: semver-diff
       uses: tj-actions/semver-diff@v2
       with:
-        initial_release_type: ${{ inputs.version }}
+        initial_release_type: ${{ inputs.release_type }}
     - name: Install stable toolchain
-      if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
+      if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       uses: actions-rs/toolchain@v1
       with:
         profile: minimal
@@ -40,14 +40,14 @@ runs:
     - uses: Swatinem/rust-cache@v2
     - name: Bump Cargo.toml version
       shell: bash
-      if: steps.semver-diff.outputs.release_type != '' || inputs.version != ''
+      if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       working-directory: ${{ inputs.working-directory }}
       run: |
         cargo install cargo-bump
-        if [[ -z "${{ inputs.version }}" ]]; then
+        if [[ -z "${{ inputs.release_type }}" ]]; then
           cargo bump ${{ steps.semver-diff.outputs.release_type }}
         else
-          cargo bump ${{ inputs.version }}
+          cargo bump ${{ inputs.release_type }}
         fi
         cargo update --workspace
 branding:
