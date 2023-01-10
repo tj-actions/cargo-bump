@@ -7,11 +7,20 @@
 Bump the current version in your `Cargo.toml`.
 
 ```yaml
-...
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    name: Test cargo-bump
     steps:
       - uses: actions/checkout@v2
       - name: Bump version
         uses: tj-actions/cargo-bump@v1
+      # Commit and Push changes to the Cargo.toml
 ```
 
 ## Inputs
