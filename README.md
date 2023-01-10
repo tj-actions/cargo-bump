@@ -27,14 +27,24 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                         DESCRIPTION                                         |
-|-------------------|--------|----------|---------|---------------------------------------------------------------------------------------------|
-|      version      | string |  false   |         | Version to bump to. (Default: the<br> diff between the current tag and<br>the previous tag) |
-| working-directory | string |  false   |  `"."`  |                                      Working directory                                      |
+|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                            DESCRIPTION                                             |
+|-------------------|--------|----------|---------|----------------------------------------------------------------------------------------------------|
+|      version      | string |  false   |         | Semver Version to bump to. (Default:<br> the diff between the current tag<br>and the previous tag) |
+| working-directory | string |  false   |  `"."`  |                                         Working directory                                          |
 
 <!-- AUTO-DOC-INPUT:END -->
 
 ## Outputs
+
+<!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
+
+|    OUTPUT    |  TYPE  |                                   DESCRIPTION                                    |
+|--------------|--------|----------------------------------------------------------------------------------|
+| new\_version  | string |                           The current project version                            |
+| old\_version  | string |                           The previous project version                           |
+| release\_type | string | The difference between two versions by<br>the release type (major, minor, patch) |
+
+<!-- AUTO-DOC-OUTPUT:END -->
 
 *   Free software: [MIT license](LICENSE)
 
