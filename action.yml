@@ -3,7 +3,7 @@ description: Bump Cargo.toml version
 author: tj-actions
 inputs:
   version:
-    description: 'Version to bump to. (Default: the diff between the current tag and the previous tag)'
+    description: 'Semver Version to bump to. (Default: the diff between the current tag and the previous tag)'
     required: false
     default: ''
   working-directory:
@@ -13,7 +13,7 @@ inputs:
 
 outputs:
   release_type:
-    description: 'The difference between two versions by the release type (major, minor, patch, prerelease, build)'
+    description: 'The difference between two versions by the release type (major, minor, patch)'
     value: ${{ steps.semver-diff.outputs.release_type }}
   new_version:
     description: 'The current project version'
