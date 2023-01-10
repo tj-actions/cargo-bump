@@ -27,9 +27,10 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|  INPUT  |  TYPE  | REQUIRED | DEFAULT |                                         DESCRIPTION                                         |
-|---------|--------|----------|---------|---------------------------------------------------------------------------------------------|
-| version | string |   true   |         | Version to bump to. (Default: the<br> diff between the current tag and<br>the previous tag) |
+|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                         DESCRIPTION                                         |
+|-------------------|--------|----------|---------|---------------------------------------------------------------------------------------------|
+|      version      | string |  false   |         | Version to bump to. (Default: the<br> diff between the current tag and<br>the previous tag) |
+| working-directory | string |  false   |  `"."`  |                                      Working directory                                      |
 
 <!-- AUTO-DOC-INPUT:END -->
 
