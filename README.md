@@ -25,7 +25,6 @@ jobs:
 
 See working example [here](https://github.com/tj-actions/cargo-bump/blob/main/.github/workflows/test.yml)
 
-
 ## Inputs
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
