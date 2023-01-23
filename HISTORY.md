@@ -1,12 +1,23 @@
 # Changelog
 
+## [v2](https://github.com/tj-actions/cargo-bump/tree/v2) (2023-01-23)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.1.0...v2)
+
+## [v2.1.0](https://github.com/tj-actions/cargo-bump/tree/v2.1.0) (2023-01-23)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.0.0...v2.1.0)
+
+**Merged pull requests:**
+
+- chore: update cache [\#22](https://github.com/tj-actions/cargo-bump/pull/22) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#21](https://github.com/tj-actions/cargo-bump/pull/21) ([jackton1](https://github.com/jackton1))
+- chore: upgraded test-package [\#20](https://github.com/tj-actions/cargo-bump/pull/20) ([jackton1](https://github.com/jackton1))
+- Upgraded to v2 [\#19](https://github.com/tj-actions/cargo-bump/pull/19) ([jackton1](https://github.com/jackton1))
+
 ## [v2.0.0](https://github.com/tj-actions/cargo-bump/tree/v2.0.0) (2023-01-10)
 
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2...v2.0.0)
-
-## [v2](https://github.com/tj-actions/cargo-bump/tree/v2) (2023-01-10)
-
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v1...v2)
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v1...v2.0.0)
 
 **Merged pull requests:**
 
