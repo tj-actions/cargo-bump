@@ -38,6 +38,7 @@ runs:
         toolchain: stable
         override: true
     - uses: actions/cache@v3
+      if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       with:
         path: |
           ~/.cargo/bin/
