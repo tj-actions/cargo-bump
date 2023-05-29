@@ -29,10 +29,10 @@ See working example [here](https://github.com/tj-actions/cargo-bump/blob/main/.g
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                                     DESCRIPTION                                                     |
-|-------------------|--------|----------|---------|---------------------------------------------------------------------------------------------------------------------|
-|   release\_type    | string |  false   |         | The release type (major, minor,<br> patch). (Default: the diff between<br> the current tag and the<br>previous tag) |
-| working-directory | string |  false   |  `"."`  |                                                  Working directory                                                  |
+|       INPUT       |  TYPE  | REQUIRED | DEFAULT |                                                DESCRIPTION                                                |
+|-------------------|--------|----------|---------|-----------------------------------------------------------------------------------------------------------|
+|   release\_type    | string |  false   |         | The release type (major, minor, patch). (Default: the diff between the current tag and the previous tag)  |
+| working-directory | string |  false   |  `"."`  |                                             Working directory                                             |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -40,11 +40,11 @@ See working example [here](https://github.com/tj-actions/cargo-bump/blob/main/.g
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
 
-|    OUTPUT    |  TYPE  |                                     DESCRIPTION                                      |
-|--------------|--------|--------------------------------------------------------------------------------------|
-| new\_version  | string |                             The current project version                              |
-| old\_version  | string |                             The previous project version                             |
-| release\_type | string | The difference between two versions<br> by the release type (major,<br>minor, patch) |
+|    OUTPUT    |  TYPE  |                                    DESCRIPTION                                     |
+|--------------|--------|------------------------------------------------------------------------------------|
+| new\_version  | string |                            The current project version                             |
+| old\_version  | string |                            The previous project version                            |
+| release\_type | string | The difference between two versions <br>by the release type (major, minor, patch)  |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
