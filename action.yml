@@ -37,7 +37,7 @@ runs:
         profile: minimal
         toolchain: stable
         override: true
-    - uses: actions/cache@v3
+    - uses: actions/cache@v4
       if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       with:
         path: |
