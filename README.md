@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Test cargo-bump
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Bump version
         uses: tj-actions/cargo-bump@v3
       # Commit and Push changes to the Cargo.toml
