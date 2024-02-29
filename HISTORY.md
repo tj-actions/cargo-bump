@@ -1,12 +1,55 @@
 # Changelog
 
-## [v2](https://github.com/tj-actions/cargo-bump/tree/v2) (2023-01-23)
+## [v3.0.0](https://github.com/tj-actions/cargo-bump/tree/v3.0.0) (2024-02-29)
 
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.1.0...v2)
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3...v3.0.0)
+
+## [v3](https://github.com/tj-actions/cargo-bump/tree/v3) (2024-02-29)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.1.0...v3)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#2](https://github.com/tj-actions/cargo-bump/issues/2)
+
+**Merged pull requests:**
+
+- feat: only calculate the release type when the input is empty to prevent overwriting it [\#50](https://github.com/tj-actions/cargo-bump/pull/50) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/verify-changed-files action to v19 [\#49](https://github.com/tj-actions/cargo-bump/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.0.1 [\#48](https://github.com/tj-actions/cargo-bump/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.20 [\#47](https://github.com/tj-actions/cargo-bump/pull/47) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v18 [\#46](https://github.com/tj-actions/cargo-bump/pull/46) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6 [\#45](https://github.com/tj-actions/cargo-bump/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/cache action to v4 [\#44](https://github.com/tj-actions/cargo-bump/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v17 [\#43](https://github.com/tj-actions/cargo-bump/pull/43) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v4 [\#42](https://github.com/tj-actions/cargo-bump/pull/42) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/release-tagger action to v4 [\#41](https://github.com/tj-actions/cargo-bump/pull/41) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#40](https://github.com/tj-actions/cargo-bump/pull/40) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- chore\(deps\): update tj-actions/auto-doc action to v3 [\#39](https://github.com/tj-actions/cargo-bump/pull/39) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v16 [\#38](https://github.com/tj-actions/cargo-bump/pull/38) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v5.0.2 [\#37](https://github.com/tj-actions/cargo-bump/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v15 [\#36](https://github.com/tj-actions/cargo-bump/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#35](https://github.com/tj-actions/cargo-bump/pull/35) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.19 [\#34](https://github.com/tj-actions/cargo-bump/pull/34) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#33](https://github.com/tj-actions/cargo-bump/pull/33) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update peter-evans/create-pull-request action to v5.0.1 [\#32](https://github.com/tj-actions/cargo-bump/pull/32) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v5 [\#31](https://github.com/tj-actions/cargo-bump/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump tj-actions/verify-changed-files from 13 to 14 [\#30](https://github.com/tj-actions/cargo-bump/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.4 [\#29](https://github.com/tj-actions/cargo-bump/pull/29) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/release-tagger action to v3 [\#28](https://github.com/tj-actions/cargo-bump/pull/28) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.18 [\#27](https://github.com/tj-actions/cargo-bump/pull/27) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v2 [\#26](https://github.com/tj-actions/cargo-bump/pull/26) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.6 [\#25](https://github.com/tj-actions/cargo-bump/pull/25) ([renovate[bot]](https://github.com/apps/renovate))
+- chore: upgraded test-package [\#24](https://github.com/tj-actions/cargo-bump/pull/24) ([jackton1](https://github.com/jackton1))
+- Upgraded to v2.1.0 [\#23](https://github.com/tj-actions/cargo-bump/pull/23) ([jackton1](https://github.com/jackton1))
 
 ## [v2.1.0](https://github.com/tj-actions/cargo-bump/tree/v2.1.0) (2023-01-23)
 
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.0.0...v2.1.0)
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2...v2.1.0)
+
+## [v2](https://github.com/tj-actions/cargo-bump/tree/v2) (2023-01-23)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.0.0...v2)
 
 **Merged pull requests:**
 
@@ -90,10 +133,6 @@
 ## [v1.0.0](https://github.com/tj-actions/cargo-bump/tree/v1.0.0) (2023-01-10)
 
 [Full Changelog](https://github.com/tj-actions/cargo-bump/compare/a74c88bdd5dfc3af2e4fa9c7dd66dd4098ff55b8...v1.0.0)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#2](https://github.com/tj-actions/cargo-bump/issues/2)
 
 **Merged pull requests:**
 
