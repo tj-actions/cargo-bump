@@ -26,6 +26,7 @@ runs:
   using: 'composite'
   steps:
     - name: Run semver-diff
+      if: inputs.release_type == ''
       id: semver-diff
       uses: tj-actions/semver-diff@v2
       with:
