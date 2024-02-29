@@ -14,7 +14,7 @@ inputs:
 outputs:
   release_type:
     description: 'The difference between two versions by the release type (major, minor, patch)'
-    value: ${{ steps.semver-diff.outputs.release_type }}
+    value: ${{ steps.semver-diff.outputs.release_type || inputs.release_type }}
   new_version:
     description: 'The current project version'
     value: ${{ steps.semver-diff.outputs.new_version }}
