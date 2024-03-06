@@ -1,16 +1,32 @@
 # Changelog
 
-## [v3.0.0](https://github.com/tj-actions/cargo-bump/tree/v3.0.0) (2024-02-29)
+## [v3](https://github.com/tj-actions/cargo-bump/tree/v3) (2024-03-06)
 
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3...v3.0.0)
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.1...v3)
 
-## [v3](https://github.com/tj-actions/cargo-bump/tree/v3) (2024-02-29)
+## [v3.0.1](https://github.com/tj-actions/cargo-bump/tree/v3.0.1) (2024-03-06)
 
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.1.0...v3)
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.0...v3.0.1)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#2](https://github.com/tj-actions/cargo-bump/issues/2)
+
+**Merged pull requests:**
+
+- Updated README.md [\#60](https://github.com/tj-actions/cargo-bump/pull/60) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- fix: error with test [\#59](https://github.com/tj-actions/cargo-bump/pull/59) ([jackton1](https://github.com/jackton1))
+- docs: add boidolr as a contributor for doc [\#58](https://github.com/tj-actions/cargo-bump/pull/58) ([allcontributors[bot]](https://github.com/apps/allcontributors))
+- chore\(deps\): update tj-actions/semver-diff action to v3 [\#57](https://github.com/tj-actions/cargo-bump/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
+- docs: update checkout action [\#56](https://github.com/tj-actions/cargo-bump/pull/56) ([boidolr](https://github.com/boidolr))
+- fix: update the release\_type output to also include the same input value [\#54](https://github.com/tj-actions/cargo-bump/pull/54) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#53](https://github.com/tj-actions/cargo-bump/pull/53) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- chore: upgraded test-package [\#52](https://github.com/tj-actions/cargo-bump/pull/52) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- Upgraded to v3 [\#51](https://github.com/tj-actions/cargo-bump/pull/51) ([tj-actions-bot](https://github.com/tj-actions-bot))
+
+## [v3.0.0](https://github.com/tj-actions/cargo-bump/tree/v3.0.0) (2024-02-29)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v2.1.0...v3.0.0)
 
 **Merged pull requests:**
 
