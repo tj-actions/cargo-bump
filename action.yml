@@ -50,7 +50,7 @@ runs:
         key: ${{ runner.os }}-cargo-cargo-bump
 
     - name: Install cargo-bump
-      if: steps.cache-primes.outputs.cache-cargo-bump != 'true'
+      if: steps.cache-cargo-bump.outputs.cache-hit != 'true'
       run: cargo install cargo-bump
     
     - name: Bump Cargo.toml version
