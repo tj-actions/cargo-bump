@@ -51,7 +51,7 @@ runs:
 
     - name: Install cargo-bump
       shell: bash
-      if: steps.cache-cargo-bump.outputs.cache-hit != 'true'
+      if: steps.cache-cargo-bump.outputs.cache-hit != 'true' && (steps.semver-diff.outputs.release_type != '' || inputs.release_type != '')
       run: cargo install cargo-bump
     
     - name: Bump Cargo.toml version
