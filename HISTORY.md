@@ -1,16 +1,41 @@
 # Changelog
 
-## [v3](https://github.com/tj-actions/cargo-bump/tree/v3) (2024-03-06)
+## [Unreleased](https://github.com/tj-actions/cargo-bump/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.2...HEAD)
+
+**Fixed bugs:**
+
+- \[BUG\] cargo-bump already exists [\#71](https://github.com/tj-actions/cargo-bump/issues/71)
+
+## [v3.0.2](https://github.com/tj-actions/cargo-bump/tree/v3.0.2) (2024-09-26)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3...v3.0.2)
+
+## [v3](https://github.com/tj-actions/cargo-bump/tree/v3) (2024-09-26)
 
 [Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.1...v3)
-
-## [v3.0.1](https://github.com/tj-actions/cargo-bump/tree/v3.0.1) (2024-03-06)
-
-[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.0...v3.0.1)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#2](https://github.com/tj-actions/cargo-bump/issues/2)
+
+**Merged pull requests:**
+
+- fix: only install cargo-bump if it hasn't been installed previously [\#72](https://github.com/tj-actions/cargo-bump/pull/72) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update peter-evans/create-pull-request action to v7 [\#69](https://github.com/tj-actions/cargo-bump/pull/69) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.1.0 [\#68](https://github.com/tj-actions/cargo-bump/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v20 [\#67](https://github.com/tj-actions/cargo-bump/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.0.5 [\#66](https://github.com/tj-actions/cargo-bump/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.0.4 [\#65](https://github.com/tj-actions/cargo-bump/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.0.3 [\#64](https://github.com/tj-actions/cargo-bump/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v6.0.2 [\#63](https://github.com/tj-actions/cargo-bump/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
+- chore: upgraded test-package [\#62](https://github.com/tj-actions/cargo-bump/pull/62) ([tj-actions-bot](https://github.com/tj-actions-bot))
+- Upgraded to v3.0.1 [\#61](https://github.com/tj-actions/cargo-bump/pull/61) ([tj-actions-bot](https://github.com/tj-actions-bot))
+
+## [v3.0.1](https://github.com/tj-actions/cargo-bump/tree/v3.0.1) (2024-03-06)
+
+[Full Changelog](https://github.com/tj-actions/cargo-bump/compare/v3.0.0...v3.0.1)
 
 **Merged pull requests:**
 
