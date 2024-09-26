@@ -39,6 +39,7 @@ runs:
         toolchain: stable
         override: true
     - uses: actions/cache@v4
+      id: cache-cargo-bump
       if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       with:
         path: |
@@ -47,12 +48,17 @@ runs:
           ~/.cargo/registry/cache/
           ~/.cargo/git/db/
         key: ${{ runner.os }}-cargo-cargo-bump
+
+    - name: Install cargo-bump
+      shell: bash
+      if: steps.cache-cargo-bump.outputs.cache-hit != 'true' && (steps.semver-diff.outputs.release_type != '' || inputs.release_type != '')
+      run: cargo install cargo-bump
+    
     - name: Bump Cargo.toml version
       shell: bash
       if: steps.semver-diff.outputs.release_type != '' || inputs.release_type != ''
       working-directory: ${{ inputs.working-directory }}
       run: |
-        cargo install cargo-bump
         if [[ -z "${{ inputs.release_type }}" ]]; then
           cargo bump ${{ steps.semver-diff.outputs.release_type }}
         else
