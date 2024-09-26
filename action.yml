@@ -50,6 +50,7 @@ runs:
         key: ${{ runner.os }}-cargo-cargo-bump
 
     - name: Install cargo-bump
+      shell: bash
       if: steps.cache-cargo-bump.outputs.cache-hit != 'true'
       run: cargo install cargo-bump
     
